@@ -19,6 +19,7 @@ body {
     width: 50px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .MainView{
@@ -35,7 +36,7 @@ body {
     height: 270px;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     margin: 10px 0px 0px 0px;
 }
@@ -52,13 +53,13 @@ body {
 }
 
 .lowerNavButtons{
-    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    margin-top: 265px;
-    margin-bottom: 25px;
+    align-items: center;
+    height: 100px;
+    padding-bottom: 20px;
+    
 }
 
 .lowerNavButtons a img {
