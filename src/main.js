@@ -2,8 +2,8 @@ const { app, BrowserWindow } = require('electron/main')
 
 const createWindow = () => {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600
+    width: 550,
+    height: 750
   })
 
   win.loadFile('index.html')
@@ -17,10 +17,4 @@ app.whenReady().then(() => {
       createWindow()
     }
   })
-})
-
-app.on('window-all-closed', () => {
-  if (process.platform !== 'win32') {
-    app.quit()
-  }
 })
