@@ -8,9 +8,36 @@
     <title>TTT-App</title>
 </head>
 <body>
-    <div class="timer-block">
-        <span id="timer"> 00:00:00 </span>
-        <button id="Startbutton"> Start </button>
+    <div class="wholepage">
+        <nav class="sidebar">
+            <div class="upperNavButtons">
+                <a href=""> menu</a>
+                <a href=""> tasks</a>
+                <a href=""> daily</a>
+                <a href="">month</a>
+                <a href=""">year</a>
+            </div>
+            <div class="lowerNavButtons">
+                <a href=""> <img src="Visuals/settings.png" width="40px"> </a>
+                <a href="">exit</a>
+            </div>
+        </nav>   
+        <div class="MainView">
+            <div class="selector">
+                <label for="clockedTask"></label>
+                <select name="clockedTask">
+                    <option value="task1 "> task1</option>
+                    <option value="task2"> task2 </option>
+                </select>
+            </div>
+            <div class="timer-block">
+                <span id="timer"> 00:00:00 </span>
+                <button id="Startbutton"> Start </button>
+            </div>
+            <div class="timingInfo">
+                Total Hours on the task
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -1,3 +1,93 @@
+@font-face {
+    font-family: 'comfortaalight'; 
+    src: url('Visuals/static/Comfortaa-Light.ttf') format('truetype');
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+.wholepage{
+    display: flex;
+}
+
+.sidebar{
+    background-color: rgb(126, 158, 206);
+    height: 100vh;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainView{
+    background-color:aqua;
+    flex: 1;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.upperNavButtons{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.lowerNavButtons{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 220px;
+    margin-bottom: 30px;
+}
+
+.selector{
+    background-color: antiquewhite;
+    padding: 20px 0px 0px 20px;
+    font-size: 20px;
+}   
+
+.selector select{
+    width: 300px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    appearance: none;
+}
+
+.selector select:focus {
+    border: none;
+    outline: none;
+}
+
 .timer-block{
+    background-color: aliceblue;
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#timer{
     background-color: aqua;
+    font-size: 155px;
+    padding: 20px;
+    font-family: 'comfortaalight', sans-serif;
+    text-align: left;
+    width:590px;
+}
+
+.timingInfo{
+    background-color:blueviolet;
+    flex: 1;
+    
 }
