@@ -14,7 +14,7 @@ body {
 }
 
 .sidebar{
-    background-color: rgb(126, 158, 206);
+    background-color: #141741;
     height: 100vh;
     width: 50px;
     display: flex;
@@ -22,7 +22,7 @@ body {
 }
 
 .MainView{
-    background-color:aqua;
+    background-color:#ebf5f1;
     flex: 1;
     height: 100vh;
     margin: 0;
@@ -32,12 +32,23 @@ body {
 }
 
 .upperNavButtons{
-    height: 280px;
+    height: 270px;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
-    margin-top: 10px;
+    margin: 10px 0px 0px 0px;
+}
+
+.upperNavButtons a img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%) brightness(90%);
+    transition: transform 0.22s ease-in-out, filter 0.22s ease-in-out; 
+}
+
+.upperNavButtons a:hover img {
+    transform: scale(1.15);
+    filter: invert(100%) brightness(100%);
 }
 
 .lowerNavButtons{
@@ -46,13 +57,25 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 220px;
-    margin-bottom: 30px;
+    margin-top: 265px;
+    margin-bottom: 25px;
 }
 
+.lowerNavButtons a img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%) brightness(90%);
+    transition: transform 0.22s ease-in-out, filter 0.22s ease-in-out; 
+    
+}
+
+.lowerNavButtons a:hover img {
+    transform: scale(1.15);
+    filter: invert(100%) brightness(100%);
+}
+
+
 .selector{
-    background-color: antiquewhite;
-    padding: 20px 0px 0px 20px;
+    padding: 20px 0px 0px 40px;
     font-size: 20px;
 }   
 
@@ -70,7 +93,6 @@ body {
 }
 
 .timer-block{
-    background-color: aliceblue;
     flex: 4;
     display: flex;
     flex-direction: column;
@@ -78,7 +100,6 @@ body {
     align-items: center;
 }
 #timer{
-    background-color: aqua;
     font-size: 155px;
     padding: 20px;
     font-family: 'comfortaalight', sans-serif;
@@ -87,7 +108,5 @@ body {
 }
 
 .timingInfo{
-    background-color:blueviolet;
     flex: 1;
-    
 }
